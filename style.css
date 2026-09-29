@@ -85,23 +85,23 @@ a:hover { color: var(--gold-deep); }
 main { max-width: var(--wrap); margin: 0 auto; padding: 0 var(--gutter); }
 
 /* ---------- hero ---------- */
-.hero { padding-top: clamp(40px, 8vw, 110px); }
+.hero { padding-top: clamp(28px, 5vw, 64px); }
 
+/* the name: one line, like a classic academic homepage */
 .name {
   margin: 0;
   font-family: var(--display);
   font-weight: 400;
-  font-size: clamp(50px, 12.2vw, 170px);
-  line-height: .98;
-  letter-spacing: -.012em;
+  font-size: clamp(32px, 3.6vw, 46px);
+  line-height: 1.15;
+  letter-spacing: 0;
   font-optical-sizing: auto;
 }
-.name__line { display: block; overflow: hidden; padding-bottom: .2em; margin-bottom: -.14em; }
+.name__line { display: inline-block; overflow: hidden; vertical-align: bottom; padding-bottom: .12em; margin-bottom: -.12em; }
 .name__line > span { display: inline-block; }
-.name__line--last { font-style: italic; padding-left: clamp(0px, 11vw, 190px); }
 
 .hero__rule {
-  height: 1px; background: var(--gold); margin-top: clamp(22px, 3vw, 36px);
+  height: 1px; background: var(--gold); margin-top: clamp(16px, 2vw, 24px);
   transform-origin: left;
 }
 
@@ -137,7 +137,7 @@ main { max-width: var(--wrap); margin: 0 auto; padding: 0 var(--gutter); }
   grid-template-columns: repeat(12, minmax(0, 1fr));
   grid-template-areas: "bio bio bio bio bio bio scene scene scene scene scene scene";
   column-gap: 24px;
-  margin-top: clamp(56px, 8vw, 104px);
+  margin-top: clamp(40px, 5vw, 72px);
   align-items: start;
 }
 .bio   { grid-area: bio; }
